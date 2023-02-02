@@ -9,6 +9,24 @@ const mySubButton = document.getElementById('subtractButton');
 
 //skriv event listners her
 
+myAddButton.addEventListener("click", function(){
+    myButtonValue++;
+    showResult(myButtonValue, this)
+});
+
+mySubButton.addEventListener("click", function(){
+    myButtonValue--;
+    showResult(myButtonValue, this)
+});
+
+function showResult(value, element){
+    console.log("Value:", value)
+    console.log("Element:", element)
+};  
+
+showResult();
+
+
 
 
 
